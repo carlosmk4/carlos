@@ -1,0 +1,66 @@
+visao-acessivel/
+│
+├── index.html
+├── style.css
+└── script.js
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visão Acessível</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Visão Acessível</h1>
+    <p>Tecnologia para mais autonomia e acessibilidade</p>
+</header>
+
+<main>
+    <section class="card">
+        <h2>🔊 Leitor de texto</h2>
+        <textarea id="texto" placeholder="Digite ou cole um texto aqui"></textarea>
+        <button onclick="lerTexto()">Ler texto em voz alta</button>
+        <button onclick="pararLeitura()">Parar leitura</button>
+    </section>
+
+    <section class="card">
+        <h2>📷 Câmera inteligente</h2>
+        <video id="camera" autoplay playsinline></video>
+        <button onclick="abrirCamera()">Abrir câmera</button>
+        <button onclick="tirarFoto()">Tirar foto</button>
+        <canvas id="canvas"></canvas>
+        <p id="resultado">A descrição aparecerá aqui.</p>
+    </section>
+
+    <section class="card">
+        <h2>🔎 Acessibilidade visual</h2>
+        <button onclick="aumentarFonte()">Aumentar letras</button>
+        <button onclick="diminuirFonte()">Diminuir letras</button>
+        <button onclick="alternarContraste()">Alto contraste</button>
+    </section>
+</main>
+
+<footer>
+    <p>Visão Acessível © 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
